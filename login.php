@@ -42,3 +42,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 }		 
 }		 
 ?>
+
+<?php if(!empty($success_message)) {?>
+	<div class="alert alert-success">
+	     <?php if (isset($success_message))echo $success_message;?>
+		 <button type="button" class="close" onclick="$('.alert').addClass('hidden');">&times;</button>
+		 </div>	
+<?php } ?>
+<?php if(!empty($error_message)) {?>
+	<div class="alert alert-danger">
+	     <?php if (isset($error_message))echo $error_message;?>
+		 <button type="button" class="close" onclick="$('.alert').addClass('hidden');">&times;</button>
+		 </div>	
+<?php } ?>
+
+
