@@ -1,3 +1,4 @@
+$2y$10$id1hQbjfcwsSN6Dlu/BbAuVgNPcj6..ly65v6TRs7XnXpVYwkGHGy
 <?php
 require("session.php");
 require_once("asset/db/db.php");
